@@ -1,0 +1,14 @@
+{
+  "name": "2025_09_24",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "dependencies": {
+    "mime": "^4.1.0",
+    "mime-types": "^3.0.1"
+  }
+}
