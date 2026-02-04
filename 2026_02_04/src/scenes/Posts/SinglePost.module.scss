@@ -1,0 +1,45 @@
+.SinglePost {
+  max-width: 1400px;
+  margin-inline: auto;
+  padding-block: 4rem;
+
+  &Wrapper {
+    background-color: #f1f1f1;
+    border: 0.1rem solid #505050;
+    border-radius: 0.5rem;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 60vh;
+  }
+
+  &Title {
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+  }
+
+  &Body {
+    font-size: 1.8rem;
+    color: #2f2f2f;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+    white-space: pre-line;
+  }
+
+  &BackLink {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    color: #fff;
+    background-color: #2f2f2f;
+    transition: all 0.2s ease-in-out;
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    align-self: flex-start;
+
+    &:hover {
+      background-color: #505050;
+    }
+  }
+}

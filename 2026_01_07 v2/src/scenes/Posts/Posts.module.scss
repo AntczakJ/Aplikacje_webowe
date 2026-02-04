@@ -1,0 +1,47 @@
+.Posts {
+  max-width: 1400px;
+  margin-inline: auto;
+  padding-block: 4rem;
+
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  &Post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    border: 0.1rem solid #505050;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+
+    &Title {
+      font-size: 2.4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &Body {
+      font-size: 1.6rem;
+      color: #2f2f2f;
+      margin-bottom: 2rem;
+    }
+
+    &Link {
+      display: block;
+      width: fit-content;
+      text-decoration: none;
+      color: #fff;
+      background-color: #2f2f2f;
+      transition: all 0.2s ease-in-out;
+      font-size: 1.4rem;
+      padding: 1rem 2rem;
+      border-radius: 0.5rem;
+
+      &:hover {
+        background-color: #505050;
+      }
+
+    }
+  }
+}
