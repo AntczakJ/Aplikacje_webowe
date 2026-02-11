@@ -1,0 +1,30 @@
+.Navbar {
+  background-color: #2f2f2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  height: fit-content;
+  min-height: 6rem;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+
+    li {
+      a {
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        color: #fff;
+        transition: all 0.2s ease-in-out;
+        text-decoration: none;
+
+        &:hover {
+          background-color: #505050;
+        }
+      }
+
+    }
+  }
+}
