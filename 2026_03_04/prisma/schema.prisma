@@ -1,0 +1,39 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+model Wpis {
+  id          Int         @id @default(autoincrement())
+  Text        String      @db.VarChar(255)
+  KategoriaId Int
+  Kategoria   Kategoria   @relation(fields: [KategoriaId], references: [id], onUpdate: Restrict)
+  Komentarze  Komentarz[]
+}
+
+model Kategoria {
+  id        Int                 @id @default(autoincrement())
+  Kategoria Kategoria_kategoria
+  Opis      String              @db.VarChar(255)
+  Wpis      Wpis[]
+}
+
+model Komentarz {
+  id        Int    @id @default(autoincrement())
+  Komentarz String @db.VarChar(255)
+  WpisId    Int
+  Wpis      Wpis   @relation(fields: [WpisId], references: [id], onDelete: Cascade)
+}
+
+enum Kategoria_kategoria {
+  fajne
+  niefajne
+  cool
+  disgusting
+  freaky
+  insane
+}
